@@ -1,3 +1,15 @@
 .fancy {
  font-style: italic; 
 }
+
+h1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
