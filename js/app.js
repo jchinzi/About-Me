@@ -67,7 +67,7 @@ if (lowSchoolGuess === 'no' || lowSchoolGuess === 'n'){
 }
 askSchool();
 // =================Q3 - True Major=========================
-
+function askMajor(){
 majorGuess = prompt('Did I study Literature in college?');
 
 var lowmajorGuess = majorGuess.toLowerCase();
@@ -82,7 +82,8 @@ if (lowmajorGuess === 'no' || lowmajorGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
+askMajor();
 // =================Q4 - False Job=========================
 
 fakeJob = prompt('Have I worked as a waitress?');
