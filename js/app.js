@@ -85,7 +85,7 @@ if (lowmajorGuess === 'no' || lowmajorGuess === 'n'){
 }
 askMajor();
 // =================Q4 - False Job=========================
-
+function askWrongJob(){
 fakeJob = prompt('Have I worked as a waitress?');
 
 var lowfakeJob = fakeJob.toLowerCase();
@@ -100,7 +100,8 @@ if (lowfakeJob === 'no' || lowfakeJob === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
+askWrongJob();
 // =================Q5 - True Job=========================
 
 realJob = prompt('Have I ever worked in the performing arts?');
