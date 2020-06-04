@@ -15,6 +15,7 @@ var guestName;
 var wantToPlay;
 
 var score = 0;
+var i;
 
 // ================Greeting ======================
 
@@ -122,7 +123,7 @@ if (lowrealJob === 'no' || lowrealJob === 'n'){
 askRightJob();
 // =================Q6 - States=========================
 function askStates(){
-for (var i = 0; i <4; i++){ //Allows up to 4 guesses
+for (i = 0; i <4; i++){ //Allows up to 4 guesses
 
   statesVisited = prompt('How many states in the US have I visited?');
   var numStatesVisited = parseInt(statesVisited);
