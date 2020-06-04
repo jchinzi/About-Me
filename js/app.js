@@ -121,7 +121,7 @@ if (lowrealJob === 'no' || lowrealJob === 'n'){
 }
 askRightJob();
 // =================Q6 - States=========================
-
+function askStates(){
 for (var i = 0; i <4; i++){ //Allows up to 4 guesses
 
   statesVisited = prompt('How many states in the US have I visited?');
@@ -143,7 +143,8 @@ for (var i = 0; i <4; i++){ //Allows up to 4 guesses
     alert('Please enter a number between 1 and 50');}
 }
 alert('Though I\'d like to visit them all some day, I have already visited 22 US states!  Many of them were visited during road trips from California to Texas, and then later from Washington to Illinois');
-
+}
+askStates();
 // =================Q7 - Countries=========================
 
 for (i = 0; i<6; i++){ //Allows up to 6 guesses
