@@ -124,14 +124,19 @@ for (var i = 0; i <4; i++){ //Allows up to 4 guesses
   var numStatesVisited = parseInt(statesVisited);
 
   if (numStatesVisited===22){
+    //console.log('That\'s exactly right! How did you know?');
     alert('That\'s exactly right! How did you know?');
     score++;
     break; //stops loop early in the case of a correct answer
   } else if (numStatesVisited>22 && numStatesVisited<50){
-    alert('Not quite that many');
+    //console.log('Not quite that many.');
+    alert('Not quite that many.');
   } else if (numStatesVisited<22 && numStatesVisited>0){
+    //console.log('More than that!')
     alert('More than that!');
-  } else {alert('please enter a number between 1 and 50');}
+  } else {
+    //console.log('Please enter a number between 1 and 50');}
+    alert('Please enter a number between 1 and 50');}
 }
 alert('Though I\'d like to visit them all some day, I have already visited 22 US states!  Many of them were visited during road trips from California to Texas, and then later from Washington to Illinois');
 
@@ -143,20 +148,26 @@ for (i = 0; i<6; i++){ //Allows up to 6 guesses
   countryVisited = prompt('I\'ve also traveled outside the US a bit.  Try and guess what other countries I\'ve visited!').toLowerCase();
 
   if (countryVisited === countryArray[0]||countryVisited === countryArray[1]||countryVisited === countryArray[2]||countryVisited === countryArray[3]||countryVisited === countryArray[4]||countryVisited === countryArray[5]){
+    //console.log('That\'s right!  How did you know?');
     alert('That\'s right!  How did you know?');
     score++;
     break;
 
   } else if (countryVisited !== countryArray[0] && countryVisited !== countryArray[1] && countryVisited !== countryArray[2] && countryVisited !== countryArray[3] && countryVisited !== countryArray[4] && countryVisited !== countryArray[5]){
+    //console.log('Nope!  I haven\'t been there yet.');
     alert('Nope!  I haven\'t been there yet.');
 
-  } else {alert('this is broken');}
+  } else {
+    //console.log('this is broken');}
+    alert('this is broken');}
 }
 alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
 
 // =================Final Score=========================
 
 if (score > 6){
+  //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
   alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
 } else {
+  //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
   alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
