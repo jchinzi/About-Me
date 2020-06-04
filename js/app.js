@@ -48,7 +48,6 @@ if (lowPetGuess === 'no' || lowPetGuess === 'n'){
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
 }
-askPet();
 // =================Q2 - False School=========================
 function askSchool(){
 schoolGuess = prompt('Did I go to the University of Washington?');
@@ -66,7 +65,6 @@ if (lowSchoolGuess === 'no' || lowSchoolGuess === 'n'){
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
 }
-askSchool();
 // =================Q3 - True Major=========================
 function askMajor(){
 majorGuess = prompt('Did I study Literature in college?');
@@ -84,7 +82,6 @@ if (lowmajorGuess === 'no' || lowmajorGuess === 'n'){
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
 }
-askMajor();
 // =================Q4 - False Job=========================
 function askWrongJob(){
 fakeJob = prompt('Have I worked as a waitress?');
@@ -102,7 +99,6 @@ if (lowfakeJob === 'no' || lowfakeJob === 'n'){
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
 }
-askWrongJob();
 // =================Q5 - True Job=========================
 function askRightJob(){
 realJob = prompt('Have I ever worked in the performing arts?');
@@ -120,7 +116,6 @@ if (lowrealJob === 'no' || lowrealJob === 'n'){
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
 }
-askRightJob();
 // =================Q6 - States=========================
 function askStates(){
 for (i = 0; i <4; i++){ //Allows up to 4 guesses
@@ -145,7 +140,6 @@ for (i = 0; i <4; i++){ //Allows up to 4 guesses
 }
 alert('Though I\'d like to visit them all some day, I have already visited 22 US states!  Many of them were visited during road trips from California to Texas, and then later from Washington to Illinois');
 }
-askStates();
 // =================Q7 - Countries=========================
 function askCountry(){
 for (i = 0; i<6; i++){ //Allows up to 6 guesses
@@ -168,14 +162,23 @@ for (i = 0; i<6; i++){ //Allows up to 6 guesses
 }
 alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
 }
-askCountry();
 // =================Final Score=========================
 function reportScore(){
-if (score > 6){
-  //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
-  alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
-} else {
-  //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
-  alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
-}
-reportScore();
+  if (score > 6){
+    //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
+    alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
+  } else {
+    //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+    alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+  }
+  //==================Function Invocations=========================
+  
+  askPet();
+  askSchool();
+  askMajor();
+  askWrongJob();
+  askRightJob();
+  askStates();
+  askCountry();
+  reportScore();
+  
