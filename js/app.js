@@ -147,7 +147,7 @@ alert('Though I\'d like to visit them all some day, I have already visited 22 US
 }
 askStates();
 // =================Q7 - Countries=========================
-
+function askCountry(){
 for (i = 0; i<6; i++){ //Allows up to 6 guesses
 
 
@@ -167,7 +167,8 @@ for (i = 0; i<6; i++){ //Allows up to 6 guesses
     console.log('this is broken');}
 }
 alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
-
+}
+askCountry();
 // =================Final Score=========================
 
 if (score > 6){
