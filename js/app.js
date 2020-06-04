@@ -15,6 +15,7 @@ var guestName;
 var wantToPlay;
 
 var score = 0;
+var i;
 
 // ================Greeting ======================
 
@@ -27,7 +28,7 @@ console.log('guestName:', guestName);
 wantToPlay = confirm('Great to meet you, ' + guestName + '!  Are you ready to play the game?');
 
 // =================Q1 - False Pet=========================
-
+function askPet(){
 if (wantToPlay){
   petGuess = prompt('Do I have a pet cat?');
 } else {
@@ -46,10 +47,9 @@ if (lowPetGuess === 'no' || lowPetGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
-
+}
 // =================Q2 - False School=========================
-
+function askSchool(){
 schoolGuess = prompt('Did I go to the University of Washington?');
 
 var lowSchoolGuess = schoolGuess.toLowerCase();
@@ -64,9 +64,9 @@ if (lowSchoolGuess === 'no' || lowSchoolGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
 // =================Q3 - True Major=========================
-
+function askMajor(){
 majorGuess = prompt('Did I study Literature in college?');
 
 var lowmajorGuess = majorGuess.toLowerCase();
@@ -81,9 +81,9 @@ if (lowmajorGuess === 'no' || lowmajorGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
 // =================Q4 - False Job=========================
-
+function askWrongJob(){
 fakeJob = prompt('Have I worked as a waitress?');
 
 var lowfakeJob = fakeJob.toLowerCase();
@@ -98,9 +98,9 @@ if (lowfakeJob === 'no' || lowfakeJob === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
 // =================Q5 - True Job=========================
-
+function askRightJob(){
 realJob = prompt('Have I ever worked in the performing arts?');
 
 var lowrealJob = realJob.toLowerCase();
@@ -115,10 +115,10 @@ if (lowrealJob === 'no' || lowrealJob === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
 // =================Q6 - States=========================
-
-for (var i = 0; i <4; i++){ //Allows up to 4 guesses
+function askStates(){
+for (i = 0; i <4; i++){ //Allows up to 4 guesses
 
   statesVisited = prompt('How many states in the US have I visited?');
   var numStatesVisited = parseInt(statesVisited);
@@ -139,9 +139,9 @@ for (var i = 0; i <4; i++){ //Allows up to 4 guesses
     alert('Please enter a number between 1 and 50');}
 }
 alert('Though I\'d like to visit them all some day, I have already visited 22 US states!  Many of them were visited during road trips from California to Texas, and then later from Washington to Illinois');
-
+}
 // =================Q7 - Countries=========================
-
+function askCountry(){
 for (i = 0; i<6; i++){ //Allows up to 6 guesses
 
 
@@ -161,12 +161,24 @@ for (i = 0; i<6; i++){ //Allows up to 6 guesses
     console.log('this is broken');}
 }
 alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
-
+}
 // =================Final Score=========================
-
-if (score > 6){
-  //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
-  alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
-} else {
-  //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
-  alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+function reportScore(){
+  if (score > 6){
+    //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
+    alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
+  } else {
+    //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+    alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+  }
+  //==================Function Invocations=========================
+  
+  askPet();
+  askSchool();
+  askMajor();
+  askWrongJob();
+  askRightJob();
+  askStates();
+  askCountry();
+  reportScore();
+  
