@@ -158,8 +158,7 @@ for (i = 0; i<6; i++){ //Allows up to 6 guesses
     alert('Nope!  I haven\'t been there yet.');
 
   } else {
-    //console.log('this is broken');}
-    alert('this is broken');}
+    console.log('this is broken');}
 }
 alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
 
