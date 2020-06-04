@@ -103,7 +103,7 @@ if (lowfakeJob === 'no' || lowfakeJob === 'n'){
 }
 askWrongJob();
 // =================Q5 - True Job=========================
-
+function askRightJob(){
 realJob = prompt('Have I ever worked in the performing arts?');
 
 var lowrealJob = realJob.toLowerCase();
@@ -118,7 +118,8 @@ if (lowrealJob === 'no' || lowrealJob === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
+askRightJob();
 // =================Q6 - States=========================
 
 for (var i = 0; i <4; i++){ //Allows up to 4 guesses
