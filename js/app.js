@@ -8,6 +8,8 @@ var majorGuess;
 var fakeJob;
 var realJob;
 var statesVisited;
+var countryArray = ['ecuador', 'ireland', 'england', 'wales', 'scotland', 'canada'];
+var countryVisited;
 
 var guestName;
 var wantToPlay;
@@ -122,6 +124,25 @@ for (var i = 0; i <4; i++){ //Allows up to 4 guesses
     alert('More than that!');
   } else {alert('please enter a number between 1 and 50');}
 }
+alert('Though I\'d like to visit them all some day, I have already visited 22 US states!  Many of them were visited during road trips from California to Texas, and then later from Washington to Illinois');
+
+// =================Q7 - Countries=========================
+
+for (i = 0; i<6; i++){ //Allows up to 6 guesses
+
+
+  countryVisited = prompt('I\'ve also traveled outside the US a bit.  Try and guess what other countries I\'ve visited!').toLowerCase();
+
+  if (countryVisited === countryArray[0]||countryVisited === countryArray[1]||countryVisited === countryArray[2]||countryVisited === countryArray[3]||countryVisited === countryArray[4]||countryVisited === countryArray[5]){
+    alert('That\'s right!  How did you know?');
+    break;
+
+  } else if (countryVisited !== countryArray[0] && countryVisited !== countryArray[1] && countryVisited !== countryArray[2] && countryVisited !== countryArray[3] && countryVisited !== countryArray[4] && countryVisited !== countryArray[5]){
+    alert('Nope!  I haven\'t been there yet.');
+
+  } else {alert('this is broken');}
+}
+alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, Ireland, England, Wales, Scotland & Canada.');
 
 // =================Final Message=========================
 
