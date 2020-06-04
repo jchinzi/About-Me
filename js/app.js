@@ -27,7 +27,7 @@ console.log('guestName:', guestName);
 wantToPlay = confirm('Great to meet you, ' + guestName + '!  Are you ready to play the game?');
 
 // =================Q1 - False Pet=========================
-
+function askPet(){
 if (wantToPlay){
   petGuess = prompt('Do I have a pet cat?');
 } else {
@@ -46,8 +46,8 @@ if (lowPetGuess === 'no' || lowPetGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
-
+}
+askPet();
 // =================Q2 - False School=========================
 
 schoolGuess = prompt('Did I go to the University of Washington?');
