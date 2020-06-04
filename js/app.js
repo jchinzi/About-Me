@@ -170,10 +170,12 @@ alert('I\'d like to travel more extensively, but so far I\'ve visited Ecuador, I
 }
 askCountry();
 // =================Final Score=========================
-
+function reportScore(){
 if (score > 6){
   //console.log('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
   alert('Congratulations ' + guestName + '! You got all ' + score +' questions right!  I hope you enjoyed the game!');
 } else {
   //console.log('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
   alert('Congratulations ' + guestName + '. You got a score of ' + score + ' out of 7.  If you\'d like to play again, just refresh the page!');}
+}
+reportScore();
