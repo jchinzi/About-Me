@@ -49,7 +49,7 @@ if (lowPetGuess === 'no' || lowPetGuess === 'n'){
 }
 askPet();
 // =================Q2 - False School=========================
-
+function askSchool(){
 schoolGuess = prompt('Did I go to the University of Washington?');
 
 var lowSchoolGuess = schoolGuess.toLowerCase();
@@ -64,7 +64,8 @@ if (lowSchoolGuess === 'no' || lowSchoolGuess === 'n'){
 } else {
   //console.log('Yes or No answers only, please.');}
   alert('Yes or No answers only, please.');}
-
+}
+askSchool();
 // =================Q3 - True Major=========================
 
 majorGuess = prompt('Did I study Literature in college?');
